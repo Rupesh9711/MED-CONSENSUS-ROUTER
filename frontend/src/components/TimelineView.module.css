@@ -1,0 +1,118 @@
+.timelineShell {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+  padding-left: 26px;
+}
+
+.trackLine {
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  bottom: 10px;
+  width: 1px;
+  background: #cbbba6;
+}
+
+.emptyState {
+  margin: 0;
+  color: #5c534a;
+  line-height: 1.6;
+  padding: 4px 0 0;
+}
+
+.windowBlock {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.windowDot {
+  position: absolute;
+  left: -22px;
+  top: 16px;
+  width: 9px;
+  height: 9px;
+  border-radius: 1px;
+  background: #b5522a;
+  border: 1px solid #1e1914;
+}
+
+.windowHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.windowTime {
+  margin: 0;
+  font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-size: 20px;
+  color: #1e1914;
+}
+
+.windowMeta {
+  margin: 0;
+  color: #38584a;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.cardStack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.doseCard {
+  border-radius: 4px;
+  padding: 12px 14px;
+  border: 1px solid #e4d7c6;
+  background: #f6efe4;
+}
+
+.breakfast {
+  border-left: 5px solid #38584a;
+}
+
+.lunch {
+  border-left: 5px solid #b5522a;
+}
+
+.dinner {
+  border-left: 5px solid #6e4a58;
+}
+
+.beforeSleep {
+  border-left: 5px solid #1e1914;
+}
+
+.flexible {
+  border-left: 5px solid #8a7d6e;
+}
+
+.doseName {
+  margin: 0 0 4px;
+  color: #1e1914;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.doseMeta {
+  margin: 0;
+  color: #5c534a;
+  font-size: 13px;
+}
+
+.subNodeChip {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 3px 7px;
+  border-radius: 2px;
+  background: #fffdf8;
+  color: #38584a;
+  border: 1px solid #cbbba6;
+  font-size: 11px;
+}

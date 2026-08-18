@@ -1,0 +1,46 @@
+:root {
+  --text: #5c534a;
+  --text-h: #1e1914;
+  --bg: #efe6d8;
+  --border: #d8cbb8;
+  --code-bg: #f6efe4;
+  --accent: #b5522a;
+  --sans: "Avenir Next", Avenir, "Century Gothic", "Trebuchet MS", sans-serif;
+  --heading: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+
+  font: 16px/145% var(--sans);
+  color-scheme: light;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background: #efe6d8;
+}
+
+#root {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  text-align: left;
+  border-inline: none;
+  min-height: 100svh;
+  display: block;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+p {
+  margin: 0;
+}

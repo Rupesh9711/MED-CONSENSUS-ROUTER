@@ -1,0 +1,416 @@
+:global(#root) {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  text-align: left;
+  border-inline: none;
+  min-height: 100svh;
+  display: block;
+}
+
+:global(body) {
+  margin: 0;
+  background: #efe6d8;
+}
+
+.applicationShell {
+  min-height: 100svh;
+  background:
+    linear-gradient(90deg, #38584a 0 10px, transparent 10px),
+    #efe6d8;
+  color: #1e1914;
+  font-family: "Avenir Next", Avenir, "Century Gothic", "Trebuchet MS", sans-serif;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 28px;
+  padding: 26px 44px 20px 36px;
+  background: #fffdf8;
+  border-bottom: 3px solid #b5522a;
+}
+
+.brandBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 13px;
+  color: #38584a;
+  font-weight: 600;
+}
+
+.brandTitle {
+  margin: 0;
+  font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #1e1914;
+}
+
+.brandSubtitle {
+  margin: 4px 0 0;
+  color: #5c534a;
+  font-size: 14.5px;
+  line-height: 1.5;
+  max-width: 680px;
+}
+
+.sessionCluster {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 4px;
+}
+
+.sessionEmail {
+  margin: 0;
+  color: #b5522a;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.ghostButton {
+  border: 1px solid #1e1914;
+  background: #fffdf8;
+  color: #1e1914;
+  border-radius: 4px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.ghostButton:hover {
+  background: #1e1914;
+  color: #fffdf8;
+}
+
+.workspaceGrid {
+  display: grid;
+  grid-template-columns: minmax(420px, 0.95fr) minmax(500px, 1.05fr);
+  gap: 22px;
+  padding: 26px 44px 52px 36px;
+  align-items: start;
+}
+
+.panel {
+  background: #fffdf8;
+  border: 1px solid #d8cbb8;
+  border-radius: 6px;
+  box-shadow: 6px 8px 0 rgba(56, 88, 74, 0.08);
+  padding: 24px;
+}
+
+.panelHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px dashed #d8cbb8;
+}
+
+.panelTitle {
+  margin: 0 0 6px;
+  font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-size: 23px;
+  color: #1e1914;
+}
+
+.panelCopy {
+  margin: 0;
+  color: #5c534a;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.rowStack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.medicationRow {
+  display: grid;
+  grid-template-columns: 1.4fr 0.7fr 1fr auto;
+  gap: 10px;
+  align-items: end;
+  padding: 12px;
+  border-radius: 5px;
+  background: #f6efe4;
+  border: 1px solid #e4d7c6;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.fieldLabel {
+  font-size: 12px;
+  color: #38584a;
+  font-weight: 650;
+}
+
+.textInput,
+.selectInput {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #cbbba6;
+  background: #fffdf8;
+  color: #1e1914;
+  border-radius: 4px;
+  padding: 10px 11px;
+  font-size: 14px;
+  outline: none;
+  font-family: inherit;
+}
+
+.textInput:focus,
+.selectInput:focus {
+  border-color: #b5522a;
+  box-shadow: 0 0 0 2px rgba(181, 82, 42, 0.18);
+}
+
+.deleteButton,
+.addButton,
+.generateButton {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: inherit;
+}
+
+.deleteButton {
+  height: 40px;
+  width: 40px;
+  background: #fffdf8;
+  color: #8c2f27;
+  border: 1px solid #8c2f27;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.deleteButton:hover {
+  background: #8c2f27;
+  color: #fffdf8;
+}
+
+.actionRow {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.addButton,
+.generateButton {
+  padding: 11px 16px;
+  font-size: 14px;
+}
+
+.addButton {
+  background: #fffdf8;
+  color: #38584a;
+  border: 1px solid #38584a;
+}
+
+.addButton:hover {
+  background: #38584a;
+  color: #fffdf8;
+}
+
+.generateButton {
+  background: #b5522a;
+  color: #fff8f2;
+  flex: 1;
+}
+
+.generateButton:hover {
+  background: #933f1f;
+}
+
+.generateButton:disabled,
+.addButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.statusBanner {
+  margin-top: 14px;
+  padding: 11px 13px;
+  border-radius: 4px;
+  background: #e7f0ea;
+  color: #2c463c;
+  border-left: 4px solid #38584a;
+  font-size: 13px;
+}
+
+.conflictList {
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.conflictItem {
+  padding: 12px 13px;
+  border-radius: 4px;
+  background: #f8ece7;
+  border-left: 4px solid #8c2f27;
+}
+
+.conflictTitle {
+  margin: 0 0 4px;
+  color: #8c2f27;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.conflictBody {
+  margin: 0;
+  color: #4a4038;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(30, 25, 20, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 40;
+  padding: 24px;
+}
+
+.modalCard {
+  width: min(620px, 100%);
+  background: #fffdf8;
+  border: 1px solid #8c2f27;
+  border-top: 8px solid #8c2f27;
+  box-shadow: 10px 12px 0 rgba(140, 47, 39, 0.12);
+  border-radius: 2px;
+  padding: 28px;
+  color: #1e1914;
+}
+
+.modalEyebrow {
+  margin: 0 0 8px;
+  color: #8c2f27;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.modalMessage {
+  margin: 0 0 20px;
+  font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-size: 22px;
+  line-height: 1.4;
+  color: #1e1914;
+}
+
+.modalButton {
+  border: none;
+  background: #8c2f27;
+  color: #fffdf8;
+  border-radius: 4px;
+  padding: 10px 16px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.gatewayCanvas {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 32px 16px;
+  background:
+    linear-gradient(90deg, #b5522a 0 10px, transparent 10px),
+    #efe6d8;
+  font-family: "Avenir Next", Avenir, "Century Gothic", "Trebuchet MS", sans-serif;
+}
+
+.gatewayCard {
+  width: min(460px, 100%);
+  background: #fffdf8;
+  border: 1px solid #d8cbb8;
+  border-radius: 6px;
+  padding: 32px;
+  box-shadow: 8px 10px 0 rgba(181, 82, 42, 0.12);
+  color: #1e1914;
+}
+
+.gatewayTitle {
+  margin: 6px 0 8px;
+  font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-size: 30px;
+  color: #1e1914;
+}
+
+.gatewayCopy {
+  margin: 0 0 24px;
+  color: #5c534a;
+  line-height: 1.6;
+}
+
+.authToggle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  margin-bottom: 20px;
+  border: 1px solid #1e1914;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.toggleButton {
+  border: none;
+  background: #fffdf8;
+  color: #5c534a;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-weight: 650;
+  font-family: inherit;
+}
+
+.toggleButtonActive {
+  background: #1e1914;
+  color: #fffdf8;
+}
+
+.authError {
+  margin: 0 0 14px;
+  color: #8c2f27;
+  font-size: 13px;
+}
+
+@media (max-width: 1100px) {
+  .workspaceGrid {
+    grid-template-columns: 1fr;
+    padding: 20px 16px 36px 16px;
+  }
+
+  .topBar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 16px 16px;
+  }
+
+  .medicationRow {
+    grid-template-columns: 1fr;
+  }
+}
